@@ -47,7 +47,6 @@ class LengthAwarePaginator extends AbstractPaginator implements Arrayable, Array
      * @param  int  $perPage
      * @param  int|null  $currentPage
      * @param  array  $options  (path, query, fragment, pageName)
-     * @return void
      */
     public function __construct($items, $total, $perPage, $currentPage = null, array $options = [])
     {
@@ -122,16 +121,19 @@ class LengthAwarePaginator extends AbstractPaginator implements Arrayable, Array
                 return [
                     'url' => $url,
                     'label' => (string) $page,
+                    'page' => $page,
                     'active' => $this->currentPage() === $page,
                 ];
             });
         })->prepend([
             'url' => $this->previousPageUrl(),
             'label' => function_exists('__') ? __('pagination.previous') : 'Previous',
+            'page' => $this->currentPage() > 1 ? $this->currentPage() - 1 : null,
             'active' => false,
         ])->push([
             'url' => $this->nextPageUrl(),
             'label' => function_exists('__') ? __('pagination.next') : 'Next',
+            'page' => $this->hasMorePages() ? $this->currentPage() + 1 : null,
             'active' => false,
         ]);
     }
