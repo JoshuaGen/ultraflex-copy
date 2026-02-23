@@ -6,7 +6,7 @@ export default function VideoLander() {
         <section className="relative h-[93vh] overflow-hidden">
             <iframe
                 className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/CyWN8ipcwgo?autoplay=1&mute=1&loop=1&playlist=CyWN8ipcwgo&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0"
+                src="https://www.youtube.com/embed/-6UQ1o7Tse0?autoplay=1&mute=1&loop=1&playlist=-6UQ1o7Tse0&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&disablekb=1&fs=0"
                 title="ULTRAFLEX Hero Video"
                 frameBorder="0"
                 allow="autoplay; encrypted-media"
