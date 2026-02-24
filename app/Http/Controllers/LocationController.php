@@ -165,7 +165,7 @@ class LocationController extends Controller
                 'slug' => 'lincoln',
                 'hours' => [
                     'weekdays' => 'Day Access: 6am - 10pm',
-                    'weekends' => 'Day Access: 8am - 10pm'
+                    'weekends' => 'Day Access: 6am - 10pm'
                 ],
                 'features' => ['Full Access Members: Mon-Sun 24hrs'],
                 'mapUrl' => 'https://www.google.com/maps/place/ULTRAFLEX+Lincoln/@53.2010099,-0.5950846,17z/data=!3m1!4b1!4m6!3m5!1s0x4878453a2df04e4d:0x2e4b6b6facf2e70d!8m2!3d53.2010068!4d-0.5902137!16s%2Fg%2F11wg7fn_1m?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D'
@@ -920,7 +920,7 @@ class LocationController extends Controller
                         [
                             'id' => 4,
                             'name' => '12 month Direct Debit',
-                            'price' => 47.00,
+                            'price' => 50.00,
                             'period' => 'month',
                             'features' => ['Monthly Direct Debit', '12 Month Contract', 'All Equipment Access', 'All Facilities', 'Best Value'],
                             'popular' => true
@@ -952,25 +952,25 @@ class LocationController extends Controller
                         [
                             'id' => 8,
                             'name' => 'Student 6 Month Pass',
-                            'price' => 246.00,
+                            'price' => 233.00,
                             'period' => '6 months',
-                            'features' => ['Student Discount', 'Valid Student ID Required', 'Payment in Full (£246)', 'All Equipment Access'],
+                            'features' => ['Student Discount', 'Valid Student ID Required', 'Payment in Full (£233)', 'All Equipment Access'],
                             'popular' => false
                         ],
                         [
                             'id' => 9,
                             'name' => 'Student 9 Month Pass',
-                            'price' => 360.00,
+                            'price' => 342.00,
                             'period' => '9 months',
-                            'features' => ['Student Discount', 'Valid Student ID Required', 'Payment in Full (£360)', 'All Equipment Access'],
+                            'features' => ['Student Discount', 'Valid Student ID Required', 'Payment in Full (£342)', 'All Equipment Access'],
                             'popular' => false
                         ],
                         [
                             'id' => 10,
                             'name' => 'Student 12 Month Pass',
-                            'price' => 468.00,
+                            'price' => 444.00,
                             'period' => '12 months',
-                            'features' => ['Student Discount', 'Valid Student ID Required', 'Payment in Full (£468)', 'All Equipment Access', 'Best Student Value'],
+                            'features' => ['Student Discount', 'Valid Student ID Required', 'Payment in Full (£444)', 'All Equipment Access', 'Best Student Value'],
                             'popular' => false
                         ],
                         [
@@ -1674,10 +1674,18 @@ class LocationController extends Controller
                         ],
                         [
                             'id' => 10,
-                            'name' => 'Boxing, MMA & Gym',
-                            'price' => 66.00,
-                            'period' => 'month',
-                            'features' => ['Boxing Access', 'MMA Access', 'Full Gym Membership'],
+                            'name' => 'Boxing, MMA & Gym - 6 Month Pass',
+                            'price' => 340.00,
+                            'period' => '6 months',
+                            'features' => ['Boxing Access', 'MMA Access', 'Full Gym Membership', 'Payment in Full'],
+                            'popular' => false
+                        ],
+                        [
+                            'id' => 11,
+                            'name' => 'Boxing, MMA & Gym - 12 Month Pass',
+                            'price' => 605.00,
+                            'period' => '12 months',
+                            'features' => ['Boxing Access', 'MMA Access', 'Full Gym Membership', 'Payment in Full'],
                             'popular' => false
                         ],
                     ],
@@ -1853,8 +1861,8 @@ class LocationController extends Controller
                         'wednesday' => 'Day Access: 6am - 10pm',
                         'thursday' => 'Day Access: 6am - 10pm',
                         'friday' => 'Day Access: 6am - 10pm',
-                        'saturday' => 'Day Access: 8am - 10pm',
-                        'sunday' => 'Day Access: 8am - 10pm'
+                        'saturday' => 'Day Access: 6am - 10pm',
+                        'sunday' => 'Day Access: 6am - 10pm'
                     ],
                     'manager' => [
                         'name' => 'Lynsey Hind',
