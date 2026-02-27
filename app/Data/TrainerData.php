@@ -267,17 +267,6 @@ After spending the last 10 years in Ibiza training clients, teaching classes, an
                 'locationSlug' => 'durham',
                 'contact' => ['instagram' => 'https://instagram.com/ashtonpersonaltraining']
             ],
-            [
-                'id' => 505,
-                'name' => 'Wendy McCready',
-                'slug' => 'wendy-mccready',
-                'image' => '/Images/unnamed (1).webp',
-                'bio' => '',
-                'specialties' => ['IFBB Pro Coaching', 'Bodybuilding', 'Contest Prep'],
-                'certifications' => ['IFBB Pro'],
-                'locationSlug' => 'durham',
-                'contact' => ['instagram' => 'https://instagram.com/ifbbprowendymccready']
-            ],
             // Derby
             [
                 'id' => 601,
@@ -376,21 +365,6 @@ Seeing you achieve your goals is what I love to do!
                 'certifications' => ['BSc Sport and Exercise Technology', 'Level 3 Personal Trainer', 'Level 2 Gym Instructor'],
                 'locationSlug' => 'rotherham',
                 'contact' => ['email' => 'haran.coaching@gmail.com', 'instagram' => 'https://www.instagram.com/harankiru?igsh=MWQ0MDE2ZHd0aHo1MQ==']
-            ],
-            [
-                'id' => 1002,
-                'name' => 'Amy Simpson',
-                'slug' => 'amy-simpson',
-                'image' => '/Images/original-EAF67F3D-5012-44AD-BA7E-6E8CD4260E9B.webp',
-                'bio' => 'Level 3 personal trainer
-Level 2 gym instructor
-I help people with ordinary lifestyles achieve extraordinary results.
-No matter your starting point, I will help you get comfortable in the gym environment. My aim is to provide all clients with the skills and confidence to be able to achieve their goals and train solo.
-You will be pushed outside of your comfort zone, you will be challenged, you will leave feeling worked but I can guarantee you will love it and the benefits you get from it!',
-                'specialties' => ['Personal Training', 'Lifestyle Change', 'Confidence Building'],
-                'certifications' => ['Level 3 Personal Trainer', 'Level 2 Gym Instructor'],
-                'locationSlug' => 'rotherham',
-                'contact' => ['email' => 'amysimpson95@gmail.com']
             ],
         ];
     }

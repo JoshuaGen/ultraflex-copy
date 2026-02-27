@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import AppLayout from '@/layouts/app-layout';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import { useEffect, useRef, useState } from 'react';
-import { MapPin, Phone, Clock, Mail, Navigation, ChevronLeft, ChevronRight, Star, Check, Dumbbell, Waves, Car, ShowerHead, Coffee, Wifi, Users, Play, Eye } from 'lucide-react';
+import { MapPin, Phone, Clock, Mail, Navigation, ChevronLeft, ChevronRight, Star, Check, Dumbbell, Waves, Car, ShowerHead, Coffee, Wifi, Users, Play, Eye, Sun } from 'lucide-react';
 
 interface Manager {
     name: string;
@@ -359,6 +359,7 @@ export default function LocationShow({ location, auth }: LocationShowProps) {
             coffee: Coffee,
             wifi: Wifi,
             users: Users,
+            sun: Sun,
         };
         const IconComponent = icons[iconName] || Dumbbell;
         return <IconComponent className="h-6 w-6" />;

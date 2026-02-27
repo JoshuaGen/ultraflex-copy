@@ -552,7 +552,7 @@ class LocationController extends Controller
                         [
                             'name' => 'Brotherhood Barbers (North Leeds)',
                             'description' => 'On-site barbers. Booking via Booksy. Instagram @brotherhood.leeds • TikTok @brotherhoodbarbers',
-                            'logo' => '/Images/york/BROTHERHOOD no back ground .webp'
+                            'logo' => '/Images/BROTHERHOOD no back ground .webp'
                         ],
                         [
                             'name' => 'Fika Aesthetics',
@@ -844,7 +844,7 @@ class LocationController extends Controller
                 
             case 'rotherham':
                 $locationData = [
-                    // Add gallery field for Rotherham
+                    // Gallery from public/Images/Gallery/rotherham/ (filled by localGalleryImages at render)
                     'gallery' => [],
                     'galleryFolderUrl' => self::galleryFolderUrl('rotherham'),
                     'id' => 4,
@@ -853,16 +853,6 @@ class LocationController extends Controller
                     'phone' => '0170 937 7311',
                     'email' => 'rotherham@ULTRAFLEXgym.co.uk',
                     'image' => '/Images/Cards-Images/rotherham.webp',
-                    'gallery' => [
-                        '/Images/newimages/Rotherham/gym-in-rotherham-3.webp',
-                        '/Images/newimages/Rotherham/gym-in-rotherham-4.webp',
-                        '/Images/newimages/Rotherham/gym-in-rotherham-5.webp',
-                        '/Images/newimages/Rotherham/2.webp',
-                        '/Images/newimages/Rotherham/3.webp',
-                        '/Images/newimages/Rotherham/4.webp',
-                        '/Images/newimages/Rotherham/5.webp',
-                        '/Images/newimages/Rotherham/WhatsApp Image 2026-01-05 at 11.02.36 AM.webp',
-                    ],
                     'slug' => 'rotherham',
                     // Provided Matterport link (updated)
                     'virtualTour' => 'https://my.matterport.com/show/?m=qcrWz3BZzrj&back=1',
@@ -1417,7 +1407,7 @@ class LocationController extends Controller
                     'manager' => [
                         'name' => 'Mark Bailes',
                         'bio' => 'I have been working here for 5 years since we opened in 2020. I have worked in the gym industry now for 20 years and have a lot of knowledge and experience, I am also a qualified level 3 personal trainer and offer 1 to 1 sessions in the gym. I am also a competitive bodybuilder who can offer training and nutrition advice if required. I am a very friendly and approachable person and will go out of my way to help anyone who requires any assistance.',
-                        'image' => '/Images/Durham Gym Manager.webp',
+                        'image' => '/Images/61861685-A285-4A58-BB22-D2BE52F1F8D7 - Mark Bailes.webp',
                         'experience' => ''
                     ],
                     'services' => [
@@ -1590,12 +1580,18 @@ class LocationController extends Controller
                         [ 'label' => 'Fusion Rehab Instagram', 'url' => 'https://www.instagram.com/Fusion_rehab_', 'type' => 'instagram' ]
                     ],
                     'features' => [
-                        'Sauna & Ice Bath'
+                        'Sauna & Ice Bath',
+                        '2 Posing Rooms',
+                        '2 Sun Beds',
+                        'External Area With Equipment & Atlas Stones'
                     ],
                     'equipment' => [
                         ['name' => 'Top-Quality Fitness Machines', 'icon' => 'dumbbell', 'available' => true],
                         ['name' => 'Cardio Equipment', 'icon' => 'waves', 'available' => true],
                         ['name' => 'Boxing Area', 'icon' => 'users', 'available' => true],
+                        ['name' => '2 Posing Rooms', 'icon' => 'users', 'available' => true],
+                        ['name' => '2 Sun Beds', 'icon' => 'sun', 'available' => true],
+                        ['name' => 'External Area With Equipment & Atlas Stones', 'icon' => 'dumbbell', 'available' => true],
                         ['name' => 'Comfortable Changing Rooms', 'icon' => 'shower', 'available' => true],
                         ['name' => 'Free On-Site Parking', 'icon' => 'car', 'available' => true],
                         ['name' => 'Easy Public Transport Access', 'icon' => 'users', 'available' => true],
@@ -1604,6 +1600,9 @@ class LocationController extends Controller
                         'Top-quality equipment from best brand names',
                         'Comfortable changing rooms',
                         'Boxing area',
+                        '2 Posing Rooms',
+                        '2 Sun Beds',
+                        'External area with equipment & Atlas Stones',
                         'Free on-site parking',
                         'Easy public transport access'
                     ],
