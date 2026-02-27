@@ -17,6 +17,7 @@ interface Location {
   phone: string;
   email: string;
   coordinates: { lat: number; lng: number };
+  mapUrl?: string;
 }
 
 interface LocationOption {
@@ -455,7 +456,8 @@ export default function ContactIndex({
                           className="w-full border-white/50 bg-white/90 text-black hover:text-red-700 hover:bg-white"
                           onClick={() =>
                             window.open(
-                              `https://maps.google.com/maps?q=${location.coordinates.lat},${location.coordinates.lng}`,
+                              location.mapUrl ||
+                                `https://maps.google.com/maps?q=${location.coordinates.lat},${location.coordinates.lng}`,
                               '_blank',
                             )
                           }
