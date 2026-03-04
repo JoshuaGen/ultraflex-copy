@@ -105,7 +105,7 @@ export default function Welcome({ auth, latestNews, locations }: WelcomeProps) {
         "/Images/Gallery/north leeds/DSC07344.webp",
         "/Images/Gallery/rotherham/akv_podcast_-2.webp",
         "/Images/Gallery/west leeds/UFG (100).webp",
-        "/Images/Gallery/West London/Photo 03-09-2025, 14 02 45.webp",
+        "/Images/Gallery/West London/DSC04280.webp",
         "/Images/Gallery/york/IMG (124).webp",
     ];
 

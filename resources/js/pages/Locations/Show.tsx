@@ -924,9 +924,8 @@ export default function LocationShow({ location, auth }: LocationShowProps) {
                                         {isDerby ? (
                                             <iframe
                                                 key={driveReloadKey}
-                                                src={`${derbyDrivePreview}?autoplay=1&mute=1`}
+                                                src={derbyDrivePreview}
                                                 className="w-full h-full"
-                                                allow="autoplay"
                                                 allowFullScreen
                                                 title={`${location.name} Virtual Tour`}
                                                 onLoad={() => setDriveReady(true)}
@@ -934,9 +933,8 @@ export default function LocationShow({ location, auth }: LocationShowProps) {
                                         ) : isNorthLeeds ? (
                                             <iframe
                                                 key={driveReloadKey}
-                                                src={`${northLeedsDrivePreview}?autoplay=1&mute=1`}
+                                                src={northLeedsDrivePreview}
                                                 className="w-full h-full"
-                                                allow="autoplay"
                                                 allowFullScreen
                                                 title={`${location.name} Virtual Tour`}
                                                 onLoad={() => setDriveReady(true)}

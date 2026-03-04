@@ -34,6 +34,34 @@ use Illuminate\Support\Str;
 // Homepage
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+// ==========================================
+// SEO Redirects for Backlinks
+// ==========================================
+// IMPORTANT: These must come BEFORE the dynamic {location} route
+
+// Redirect old "gym-in-" location URLs to correct slugs
+Route::redirect('/locations/gym-in-york', '/locations/york', 301);
+Route::redirect('/locations/gym-in-leeds', '/locations/west-leeds', 301);
+Route::redirect('/locations/gym-in-rotherham', '/locations/rotherham', 301);
+Route::redirect('/locations/gym-in-durham', '/locations/durham', 301);
+Route::redirect('/locations/gym-in-normanton', '/locations/normanton', 301);
+Route::redirect('/locations/gym-in-hull', '/locations/hull', 301);
+Route::redirect('/locations/ultra-flex-athens', '/locations/athens-greece', 301);
+
+// Redirect old nested location URLs to main location pages
+Route::redirect('/locations/leeds/gym-facilities', '/locations/west-leeds', 301);
+Route::redirect('/locations/gym-in-leeds/personal-trainers', '/trainers', 301);
+
+// Redirect all wp-content image uploads to tours/gallery page
+Route::get('/wp-content/uploads/{path}', function () {
+    return redirect('/tours', 301);
+})->where('path', '.*');
+
+// Redirect any other wp-content paths to homepage
+Route::get('/wp-content/{path}', function () {
+    return redirect('/', 301);
+})->where('path', '.*');
+
 // Locations
 Route::get('/locations', [LocationController::class, 'index'])->name('locations.index');
 Route::get('/locations/{location}', [LocationController::class, 'show'])->name('locations.show');
@@ -395,3 +423,4 @@ Route::get('/gallery', function (Request $request) {
         'auth' => ['user' => $request->user()],
     ]);
 })->name('gallery.index');
+

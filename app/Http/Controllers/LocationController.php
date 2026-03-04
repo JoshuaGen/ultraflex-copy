@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -368,13 +367,13 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX WEST LEEDS',
                     'address' => 'Cape Mills, Coal Hill Ln, Leeds LS28 5NA',
                     'phone' => '0113 256 5107',
-                    'email' => 'leeds@ULTRAFLEXgym.co.uk',
+                    'email' => 'leeds@ultraflexgym.co.uk',
                     'image' => '/Images/newimages/West Leeds/gym-in-westleeds.webp',
                     'gallery' => [],
                     'galleryFolderUrl' => self::galleryFolderUrl('west-leeds'),
                     'slug' => 'west-leeds',
-                    // West Leeds drone video tour (updated Jan 12 2026)
-                    'virtualTour' => 'https://www.youtube.com/embed/hvSoOHsIh28?rel=0&modestbranding=1',
+                    // West Leeds Matterport virtual tour
+                    'virtualTour' => 'https://my.matterport.com/show/?m=8gw4DT8ZmVc&back=1',
                     'hours' => [
                         'monday' => '05:30 – 22:00',
                         'tuesday' => '05:30 – 22:00',
@@ -522,7 +521,7 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX NORTH LEEDS',
                     'address' => 'Limewood Approach, Seacroft, Leeds LS14 1NH',
                     'phone' => '0113 513 7671',
-                    'email' => 'northleeds@ULTRAFLEXgym.co.uk',
+                    'email' => 'northleeds@ultraflexgym.co.uk',
                     'image' => '/Images/processed-C2A00A7E-5F83-456C-B4CB-70873B439AE2-min-min.webp',
                     'gallery' => [],
                     'galleryFolderUrl' => self::galleryFolderUrl('north-leeds'),
@@ -663,7 +662,7 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX NORMANTON',
                     'address' => 'Ripley Dr, Normanton WF6 1QT',
                     'phone' => '01924 895794',
-                    'email' => 'normanton@ULTRAFLEXgym.co.uk',
+                    'email' => 'normanton@ultraflexgym.co.uk',
                     'image' => '/Images/newimages/Normanton/gym-in-normanton.webp',
                     'gallery' => [
                         '/Images/Gallery/Normanton/DSC08743.webp',
@@ -680,7 +679,7 @@ class LocationController extends Controller
                     'galleryFolderUrl' => self::galleryFolderUrl('normanton'),
                     'slug' => 'normanton',
                     // Scene3D tour link
-                    'virtualTour' => 'https://my.scene3d.co.uk/tour/ULTRAFLEX-normanton-2022',
+                    'virtualTour' => 'https://my.scene3d.co.uk/tour/ultraflex-normanton-2022',
                     'hours' => [
                         'monday' => '06:00 – 22:00',
                         'tuesday' => '06:00 – 22:00',
@@ -717,18 +716,8 @@ class LocationController extends Controller
                         'Free on-site parking',
                         'Easy public transport access'
                     ],
-                    // Services & Partners: Normanton — only AmyClark Hair
-                    'services' => [
-                        [
-                            'name' => 'AmyClark Hair',
-                            'description' => 'Professional hair services available at ULTRAFLEX Normanton.',
-                            'icon' => null
-                        ],
-                    ],
-                    'serviceLinks' => [
-                        ['label' => 'AmyClark Hair Instagram', 'url' => 'https://www.instagram.com/amyclark_hair', 'type' => 'external'],
-                        ['label' => 'AmyClark Hair - Book Appointments (Booksy)', 'url' => 'https://booksy.com', 'type' => 'external'],
-                    ],
+                    'services' => [],
+                    'serviceLinks' => [],
                     'membershipPlans' => [
                         [
                             'id' => 2,
@@ -851,7 +840,7 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX ROTHERHAM',
                     'address' => '175 Effingham St, Rotherham S65 1BL',
                     'phone' => '0170 937 7311',
-                    'email' => 'rotherham@ULTRAFLEXgym.co.uk',
+                    'email' => 'rotherham@ultraflexgym.co.uk',
                     'image' => '/Images/Cards-Images/rotherham.webp',
                     'slug' => 'rotherham',
                     // Provided Matterport link (updated)
@@ -1041,7 +1030,7 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX YORK',
                     'address' => '10 Layerthorpe, York YO31 7YW',
                     'phone' => '+44 1904 623383',
-                    'email' => 'york@ULTRAFLEXgym.co.uk',
+                    'email' => 'york@ultraflexgym.co.uk',
                     'image' => '/Images/newimages/York/gym-in-york.webp',
                     'slug' => 'york',
                     // Provided Matterport link (updated)
@@ -1057,7 +1046,7 @@ class LocationController extends Controller
                     ],
                     'manager' => [
                         'name' => 'Liam',
-                        'bio' => 'Hi, I\'m Liam, and I\'d like to give you the warmest welcome to ULTRAFLEX York - the gym where everyone fits in, whether you\'re lifting 5kg, 50kg, or just lifting your mood for the day. We\'re proud to be more than just a place to train. We\'re a community, a support system, and occasionally... a group of people bonding over how sore leg day made us. What I love most about ULTRAFLEX York is that it\'s truly for everyone. First-time gym-goer? Perfect. Seasoned lifter? You\'ll feel right at home. Someone who comes purely for a walk and a chat? We\'ve got a spot for you too. Our members are friendly, our atmosphere is welcoming, and our equipment - well, there\'s a lot of it, and it\'s all top-notch. I\'m usually buzzing around the gym floor, talking to members, organising the weight plates, or trying to resist the protein Cookies. If you ever need help, advice, or just want someone to celebrate a PB with, come find me. And if you prefer messages over conversations (absolutely no judgement - I love a good email), you can reach our team on this email address york@ULTRAFLEXgym.co.uk We\'re proud to have you as part of the family - now let\'s make some progress, have some laughs, and enjoy the journey together.',
+                        'bio' => 'Hi, I\'m Liam, and I\'d like to give you the warmest welcome to ULTRAFLEX York - the gym where everyone fits in, whether you\'re lifting 5kg, 50kg, or just lifting your mood for the day. We\'re proud to be more than just a place to train. We\'re a community, a support system, and occasionally... a group of people bonding over how sore leg day made us. What I love most about ULTRAFLEX York is that it\'s truly for everyone. First-time gym-goer? Perfect. Seasoned lifter? You\'ll feel right at home. Someone who comes purely for a walk and a chat? We\'ve got a spot for you too. Our members are friendly, our atmosphere is welcoming, and our equipment - well, there\'s a lot of it, and it\'s all top-notch. I\'m usually buzzing around the gym floor, talking to members, organising the weight plates, or trying to resist the protein Cookies. If you ever need help, advice, or just want someone to celebrate a PB with, come find me. And if you prefer messages over conversations (absolutely no judgement - I love a good email), you can reach our team on this email address york@ultraflexgym.co.uk We\'re proud to have you as part of the family - now let\'s make some progress, have some laughs, and enjoy the journey together.',
                         'image' => '/Images/managers/liam.jpg',
                         'experience' => null
                     ],
@@ -1219,7 +1208,7 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX HULL',
                     'address' => 'Business Park, 261 Hawthorn Avenue Trackside, Hull HU3 5EN',
                     'phone' => '01482 327874',
-                    'email' => 'hull@ULTRAFLEXgym.co.uk',
+                    'email' => 'hull@ultraflexgym.co.uk',
                     // Updated primary image for Hull location
                     'image' => '/Images/processed-E08A33F0-0FB6-43A5-BF60-EC1147B6517D-min-min.webp',
                     'gallery' => [
@@ -1382,7 +1371,7 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX DURHAM',
                     'address' => 'Mandale Business Park, Unit 28D, Kent House, Durham DH1 1TH',
                     'phone' => '0191 3898321',
-                    'email' => 'durham@ULTRAFLEXgym.co.uk',
+                    'email' => 'durham@ultraflexgym.co.uk',
                     // Updated primary image for Durham location
                     'image' => '/Images/original-787FADAA-6849-48F3-B005-6AD9FB2E74C4-min-min.webp',
                     'gallery' => [
@@ -1530,12 +1519,12 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX DERBY',
                     'address' => 'Chequers Rd, Derby DE21 6EN',
                     'phone' => '07395616771',
-                    'email' => 'derby@ULTRAFLEXgym.co.uk',
+                    'email' => 'derby@ultraflexgym.co.uk',
                     // Updated primary image for Derby location
                     'image' => '/Images/processed-5AB78E5E-3190-4963-8AAF-9B3B527D73AD-min-min.webp',
                     'slug' => 'derby',
                     // YouTube link
-                    'virtualTour' => 'https://www.youtube.com/embed/VKlANmwoDPQ',
+                    'virtualTour' => 'https://youtu.be/VKlANmwoDPQ',
                     'hours' => [
                         'monday' => '05:00 – 22:00',
                         'tuesday' => '05:00 – 22:00',
@@ -1547,7 +1536,7 @@ class LocationController extends Controller
                     ],
                     'manager' => [
                         'name' => 'Ian',
-                        'bio' => 'Welcome to ULTRAFLEX Derby. With over 200 pieces of the best gym machinery from several different brands, a full sized boxing ring, and powerlifting cage, located in a 20k sq ft facility, you are entering the best equipped gym in the Midlands. Here we bring the best training experience for everyone, an amazing team to support you and provide the perfect environment no matter what you’re training for. Tired of messy gyms? Here we work hard to provide you with the cleanest facility, no more looking for weights or attachments, all weights are kept in order, and leaving weights out isn’t tolerated. Looking for more than just a gym? Come sit down and relax in one of our 3 saunas, enjoy a shake with a brownie after a hard workout (healthier options available). For those braver souls out there, we also have ice baths available to help with your recovery. On site we also have an Osteopath, Sports Massage and Therapy, and blood testing available. All this in one place! If you ever need anything come see us. If you would like to enquire or ever need to reach me, please contact me on derby@ULTRAFLEXgym.co.uk.',
+                        'bio' => 'Welcome to ULTRAFLEX Derby. With over 200 pieces of the best gym machinery from several different brands, a full sized boxing ring, and powerlifting cage, located in a 20k sq ft facility, you are entering the best equipped gym in the Midlands. Here we bring the best training experience for everyone, an amazing team to support you and provide the perfect environment no matter what you’re training for. Tired of messy gyms? Here we work hard to provide you with the cleanest facility, no more looking for weights or attachments, all weights are kept in order, and leaving weights out isn’t tolerated. Looking for more than just a gym? Come sit down and relax in one of our 3 saunas, enjoy a shake with a brownie after a hard workout (healthier options available). For those braver souls out there, we also have ice baths available to help with your recovery. On site we also have an Osteopath, Sports Massage and Therapy, and blood testing available. All this in one place! If you ever need anything come see us. If you would like to enquire or ever need to reach me, please contact me on derby@ultraflexgym.co.uk.',
                         'image' => '/Images/managers/ian.jpg',
                         'experience' => null
                     ],
@@ -1607,6 +1596,14 @@ class LocationController extends Controller
                         'Easy public transport access'
                     ],
                     'membershipPlans' => [
+                        [
+                            'id' => 1,
+                            'name' => 'Day Pass',
+                            'price' => 17.00,
+                            'period' => 'day',
+                            'features' => ['1 Day Access', 'All Equipment Access', 'Premium London Location'],
+                            'popular' => false
+                        ],
                         [
                             'id' => 2,
                             'name' => 'Weekly Pass',
@@ -1749,7 +1746,7 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX ATHENS (GREECE)',
                     'address' => 'Ethnarchou Makariou 16, Peristeri 121 32, Greece',
                     'phone' => '+30 21 0578 5856',
-                    'email' => 'athens@ULTRAFLEXgym.co.uk',
+                    'email' => 'athens@ultraflexgym.co.uk',
                     'image' => '/Images/athens/HeroBG/DSC07413.jpg',
                     'gallery' => [
                         '/Images/athens/ForGallery/gym-in-athens-5.webp',
@@ -1840,7 +1837,7 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX LINCOLN',
                     'address' => '3 Pioneer Way, Lincoln LN6 3DH',
                     'phone' => '01522 454320',
-                    'email' => 'lincoln@ULTRAFLEXgym.co.uk',
+                    'email' => 'lincoln@ultraflexgym.co.uk',
                     // Updated primary image for Lincoln location (replaced per user request Jan 12 2026)
                     'image' => '/Images/newimages/processed-7CE97793-CFE2-44A3-9BC7-AC26D84DB463.webp',
                     'gallery' => [
@@ -2075,7 +2072,7 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX WEST LONDON',
                     'address' => 'Point West, 2, Packet Boat Ln, Uxbridge UB8 2JP',
                     'phone' => '01895 436000',
-                    'email' => 'westlondon@ULTRAFLEXgym.co.uk',
+                    'email' => 'westlondon@ultraflexgym.co.uk',
                     // Updated primary image for West London location (replaced per user request Oct 8 2025)
                     'image' => '/Images/processed-463489D0-F620-407E-BED0-4EB177EDCAC4 (1).webp',
                     'slug' => 'west-london',
@@ -2092,7 +2089,7 @@ class LocationController extends Controller
                     ],
                     'manager' => [
                         'name' => 'Tiff Nelhams',
-                        'bio' => 'I’ve been part of this gym for almost three years, starting on front of house before stepping into the role of General Manager when we became ULTRAFLEX West London. During that time, I’ve had the chance to get to know our members and experience first-hand what makes this place so special. For me, it’s never been just a gym—it’s a community and a second home. This gym has also played a huge role in my personal journey. After being diagnosed with cancer last year, the support I received from members and staff was a lifeline. That experience made me even more determined to give back and to work as hard as I can to create the best possible environment for everyone who walks through the doors. My role is about more than just running the site. I care deeply about supporting our staff, maintaining high standards, and making sure our members feel welcome, motivated, and valued. I like to lead by example—whether that’s being on the gym floor, putting weights away, or simply having a chat with members—because the little things matter. ULTRAFLEX West London is a place I care deeply about, and I’ll always work hard to make sure it remains somewhere both staff and members can enjoy, feel valued, and be proud to be part of.',
+                        'bio' => 'I’ve been part of this gym for almost three years, starting on front of house before stepping into the role of General Manager when we became ULTRAFLEX West London. During that time, I’ve had the chance to get to know our members and experience first-hand what makes this place so special. For me, it’s never been just a gym—it’s a community and a second home. My role is about more than just running the site. I care deeply about supporting our staff, maintaining high standards, and making sure our members feel welcome, motivated, and valued. I like to lead by example—whether that’s being on the gym floor, putting weights away, or simply having a chat with members—because the little things matter. ULTRAFLEX West London is a place I care deeply about, and I’ll always work hard to make sure it remains somewhere both staff and members can enjoy, feel valued, and be proud to be part of.',
                         'image' => '/Images/managers/tiff.jpg',
                         'experience' => null
                     ],
@@ -2143,6 +2140,14 @@ class LocationController extends Controller
                         'Easy public transport access'
                     ],
                     'membershipPlans' => [
+                        [
+                            'id' => 1,
+                            'name' => 'Day Pass',
+                            'price' => 17.00,
+                            'period' => 'day',
+                            'features' => ['1 Day Access', 'All Equipment Access', 'Premium London Location'],
+                            'popular' => false
+                        ],
                         [
                             'id' => 2,
                             'name' => 'Weekly Pass',
@@ -2211,31 +2216,31 @@ class LocationController extends Controller
                     'reviews' => [
                         [
                             'id' => 1,
-                            'name' => 'Alexandra Sterling',
+                            'name' => 'Kim Lake Benson Bond',
                             'rating' => 5,
-                            'comment' => 'Perfect location in Westfield! So convenient for shopping and working out. The early 5:30 AM opening is brilliant for my morning routine before work in the city.',
-                            'date' => '2025-06-26'
+                            'comment' => 'What an improvement from Panthers. Well managed, clean and refurbished. Management care and listen when issues are raised. Thank you to the manager for improving the gym and being so supportive',
+                            'date' => 'Edited a month ago'
                         ],
                         [
                             'id' => 2,
-                            'name' => 'James Whitfield',
+                            'name' => 'Daniel Gomes',
                             'rating' => 5,
-                            'comment' => 'Love the no-contract monthly rolling option - perfect for my London lifestyle. Extended hours until 22:30 means I can train after long work days.',
-                            'date' => '2025-06-24'
+                            'comment' => 'Got the week pass, excellent gym, probably the best gym in london when it comes to bodybuilding machines, spacious, they have prime machines which is the upper echelon of gym equipment, decent customer service, parking is ok',
+                            'date' => '2 months ago'
                         ],
                         [
                             'id' => 3,
-                            'name' => 'Sophie Cambridge',
+                            'name' => 'Ilias Krystallis',
                             'rating' => 5,
-                            'comment' => 'Amazing gym in the heart of West London. The location in Westfield makes it so easy to combine with other activities. Top-quality equipment!',
-                            'date' => '2025-06-22'
+                            'comment' => 'Top gym, major renovation and change of ownership really made a difference to this old school gym. I\'ve never seen that kind of equipment anywhere I\'ve been. Clean, well spaced, friendly atmosphere and the staff members are making the place feel welcoming. Shout out to Mateusz and Tiff. *You don\'t have to be a pro to be here, anyone is welcome 🤗',
+                            'date' => '4 months ago'
                         ],
                         [
                             'id' => 4,
-                            'name' => 'Michael Thornton',
+                            'name' => 'Harvey Virdee',
                             'rating' => 5,
-                            'comment' => 'The 6-month pass is excellent value at just over £40 per month. Great facilities and the extended weekend hours work perfectly with my schedule.',
-                            'date' => '2025-06-20'
+                            'comment' => 'Great gym. awesome environment. Great staff. Also has the best equipment. Mateusz has been very helpful and made my 1st months experience very good. highly recommend this gym to anybody who is serious about training.',
+                            'date' => '4 months ago'
                         ]
                     ],
                     'coordinates' => [
@@ -2253,7 +2258,7 @@ class LocationController extends Controller
                     'name' => 'ULTRAFLEX WEST LEEDS',
                     'address' => 'Cape Mills, Coal Hill Ln, Leeds LS28 5NA',
                     'phone' => '0113 256 5107',
-                    'email' => 'leeds@ULTRAFLEXgym.co.uk',
+                    'email' => 'leeds@ultraflexgym.co.uk',
                     'image' => '/Images/westleeds/UFG (100) (2).jpg',
                     'gallery' => [
                         '/Images/westleeds/westleeds/ForGallery/DSC07341.jpg',
