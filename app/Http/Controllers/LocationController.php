@@ -175,7 +175,7 @@ class LocationController extends Controller
                 'address' => 'Point West, 2, Packet Boat Ln, Uxbridge UB8 2JP',
                 'phone' => '01895 436000',
                 // Updated processed hero image (Oct 8 2025 change request)
-                'image' => '/Images/Cards-Images/west-london.webp',
+                'image' => '/Images/DSC08031.webp',
                 'slug' => 'west-london',
                 'hours' => [
                     'weekdays' => '05:30 - 22:30',
@@ -2074,7 +2074,7 @@ class LocationController extends Controller
                     'phone' => '01895 436000',
                     'email' => 'westlondon@ultraflexgym.co.uk',
                     // Updated primary image for West London location (replaced per user request Oct 8 2025)
-                    'image' => '/Images/processed-463489D0-F620-407E-BED0-4EB177EDCAC4 (1).webp',
+                    'image' => '/Images/DSC08031.webp',
                     'slug' => 'west-london',
                     // West London tour video nearly ready (placeholder null)
                     'virtualTour' => null,
