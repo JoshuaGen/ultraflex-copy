@@ -104,8 +104,8 @@ class TourController extends Controller
                 'locationSlug' => 'lincoln',
                 // Updated primary image for Lincoln tour card
                 'image' => '/Images/Cards-Images/processed-7CE97793-CFE2-44A3-9BC7-AC26D84DB463%20(1).webp',
-                // Temporary YouTube fallback while waiting for tour video
-                'tourUrl' => 'https://youtu.be/u3qFZpkqxyI',
+                // Updated to new Lincoln tour video (March 2026)
+                'tourUrl' => 'https://www.youtube.com/watch?v=q0Ur8X0iWC8',
                 'address' => 'High Street, Lincoln LN5 7PJ, UK',
                 'phone' => '+44 1522 012 345',
                 'email' => 'lincoln@ultraflexgym.co.uk',
@@ -359,7 +359,8 @@ class TourController extends Controller
                 'address' => '3 Pioneer Way, Lincoln LN6 3DH',
                 'phone' => '+44 1522 012 345',
                 'email' => 'lincoln@ultraflexgym.co.uk',
-                'tourUrl' => 'https://youtu.be/u3qFZpkqxyI'
+                // Updated to new Lincoln tour video (March 2026)
+                'tourUrl' => 'https://www.youtube.com/watch?v=q0Ur8X0iWC8'
             ],
             'west-london' => [
                 'id' => 11,

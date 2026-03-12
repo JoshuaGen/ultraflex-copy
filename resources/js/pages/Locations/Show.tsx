@@ -127,13 +127,15 @@ export default function LocationShow({ location, auth }: LocationShowProps) {
     // Derby & North Leeds: replace virtual tour YouTube with provided Google Drive preview
     const isDerby = (location.slug?.toLowerCase() === 'derby') || (location.name?.toLowerCase().includes('derby'));
     const isNorthLeeds = (location.slug?.toLowerCase() === 'north-leeds') || (location.name?.toLowerCase().includes('north leeds'));
+    const isLincoln = (location.slug?.toLowerCase() === 'lincoln') || (location.name?.toLowerCase().includes('lincoln'));
     const derbyDrivePreview = 'https://drive.google.com/file/d/1jdqNRl2rdfuUTqgrtpEgJFrXcTqjqDcM/preview';
     const northLeedsDrivePreview = 'https://drive.google.com/file/d/1BYZxK7AkFeieHoZkurcqd98mpcJEMelW/preview';
     const derbyDriveId = '1jdqNRl2rdfuUTqgrtpEgJFrXcTqjqDcM';
     const rawTourSrc = isDerby ? derbyDrivePreview : (isNorthLeeds ? northLeedsDrivePreview : location.virtualTour);
     const isYouTubeTour = !!rawTourSrc && (rawTourSrc.includes('youtube.com') || rawTourSrc.includes('youtu.be'));
     // Normalize YouTube URLs to embed format and enable autoplay (muted), JS API, and clean branding
-    const normalizeYouTubeEmbed = (src?: string) => {
+    // Lincoln: disable autoplay to avoid error 152-18
+    const normalizeYouTubeEmbed = (src?: string, disableAutoplay: boolean = false) => {
         if (!src) return src;
         try {
             const input = new URL(src);
@@ -150,8 +152,10 @@ export default function LocationShow({ location, auth }: LocationShowProps) {
                 }
             }
             const url = new URL(embedBase);
-            url.searchParams.set('autoplay', '1');
-            url.searchParams.set('mute', '1');
+            if (!disableAutoplay) {
+                url.searchParams.set('autoplay', '1');
+                url.searchParams.set('mute', '1');
+            }
             url.searchParams.set('enablejsapi', '1');
             if (typeof window !== 'undefined' && window.location?.origin) {
                 url.searchParams.set('origin', window.location.origin);
@@ -164,7 +168,7 @@ export default function LocationShow({ location, auth }: LocationShowProps) {
             return src;
         }
     };
-    const tourSrc = isYouTubeTour ? normalizeYouTubeEmbed(rawTourSrc) : rawTourSrc;
+    const tourSrc = isYouTubeTour ? normalizeYouTubeEmbed(rawTourSrc, isLincoln) : rawTourSrc;
     const tourIframeRef = useRef<HTMLIFrameElement>(null);
     const [tourPlaying, setTourPlaying] = useState(false);
     // Derby Drive preview load tracking and fallback

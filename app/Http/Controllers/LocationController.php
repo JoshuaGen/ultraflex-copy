@@ -1849,8 +1849,8 @@ class LocationController extends Controller
                         '/Images/newimages/Lincoln/gym-in-lincoln-8.webp'
                     ],
                     'slug' => 'lincoln',
-                    // YouTube link
-                    'virtualTour' => 'https://www.youtube.com/embed/u3qFZpkqxyI',
+                    // Updated to new Lincoln tour video (March 2026)
+                    'virtualTour' => 'https://www.youtube.com/watch?v=q0Ur8X0iWC8',
                     'hours' => [
                         'monday' => 'Day Access: 6am - 10pm',
                         'tuesday' => 'Day Access: 6am - 10pm',

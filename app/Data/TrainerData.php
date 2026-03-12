@@ -291,6 +291,17 @@ Ex-professional boxer. I have been involved in sport and exercise all my life. I
                 'locationSlug' => 'derby',
                 'contact' => ['instagram' => 'https://instagram.com/d.htraining', 'email' => 'dhtraining@gmail.com', 'phone' => '07460834333']
             ],
+            [
+                'id' => 603,
+                'name' => 'Joe Stewart',
+                'slug' => 'joe-stewart',
+                'image' => '/Images/PTS/Joe Stewart pic - Ian Evans.webp',
+                'bio' => 'I\'m Joe, a Level 3 qualified Personal Trainer specialising in fat loss, strength training, and muscle gain. I\'m passionate about helping people build stronger bodies, lose body fat, and gain lean muscle through structured, results-driven training. My approach focuses on proper technique, progressive overload, and building sustainable habits that deliver long-term results — not quick fixes. Whether your goal is to transform your physique, increase your strength, or simply feel more confident in yourself, I\'ll provide the guidance, accountability, and personalised plan you need to get there.',
+                'specialties' => ['Fat Loss', 'Strength Training', 'Muscle Gain'],
+                'certifications' => ['Level 3 Personal Trainer'],
+                'locationSlug' => 'derby',
+                'contact' => []
+            ],
             // West London
             [
                 'id' => 701,
